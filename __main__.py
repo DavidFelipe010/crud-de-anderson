@@ -13,8 +13,5 @@ def main():
    nome_produtos = []
    preco_produto = []
 
-   cadastrar_funcionario(nome_funcionarios,cpf_funcionarios, salario_funcionarios)
-   excluir_funcionario(nome_funcionarios,cpf_funcionarios, salario_funcionarios)
-
 if __name__ == '__main__':
     main()
