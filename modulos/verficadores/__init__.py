@@ -30,8 +30,8 @@ def verificar_nums_naturais(txt: str) -> int:
 def verificar_nome(txt: str) -> str:
     label = input(txt).strip().lower()
 
-    while len(label) < 3 or (c for c in label if not (c.isalpha() or c.isspace())):
-        print('\033[31m[ERROR] O nome deve conter pelo menos 3 caracteres.\033[m\n')
+    while len(label) < 3 or not all(c.isalpha() for c in label if c != ' '):
+        print('\033[31m[ERROR] O nome deve conter pelo menos 3 palavras.\033[m\n')
         label = input(txt).strip().lower()
     
     return label

@@ -1,11 +1,11 @@
-from modulos.verficadores import verificar_nome, verificar_cpf, verificar_salario, verificar_preco_produto
+from modulos.verficadores import verificar_nome, verificar_cpf, verificar_salario, verificar_preco_produto, verificar_endereco
 from modulos.texto import limpar_tela, titulo
 
 def cadastrar_funcionario(lst_nome, lst_cpf, lst_salario):
     limpar_tela()
     titulo('Cadastro de Funcionário')
     
-    nome = verificar_nome('Digite o nome do funcionário: ')
+    nome = verificar_nome('Digite o nome do funcionário (primeiro e ultimo nome): ')
     cpf = verificar_cpf('Digite o CPF do funcionário (apenas números): ')
     salario = verificar_salario('Digite o salário do funcionário: ')
 
@@ -18,7 +18,7 @@ def cadastrar_cliente(lst_nome, lst_cpf, lst_endereco):
     limpar_tela()
     titulo('Cadastro de Cliente')
 
-    nome = verificar_nome('Digite o nome do cliente: ')
+    nome = verificar_nome('Digite o nome do cliente (primeiro e ultimo nome): ')
     cpf = verificar_cpf('Digite o CPF do cliente (apenas números): ')
     endereco = verificar_endereco()
 
