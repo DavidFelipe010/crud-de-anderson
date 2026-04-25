@@ -9,6 +9,7 @@ def lista_funcinario(lst_nome, lst_cpf, lst_enderoco):
     for id, (nome, cpf, salario) in enumerate(zip(lst_nome, lst_cpf, lst_enderoco), 1):
         print(f"{f'[{id}]':<5} {nome.title():<16} {formatar_cpf(cpf):<16} R${salario:<12,.2f}")
 
+    linha(60)
  
 def listar_funcionario(lst_nome, lst_cpf, lst_enderoco):
 
@@ -33,6 +34,8 @@ def lista_cliente(lst_nome, lst_cpf, lst_endereco):
     for id, (nome, cpf, endereco) in enumerate(zip(lst_nome, lst_cpf, lst_endereco), 1):
         print(f"{f'[{id}]':<5} {nome.title():<16} {formatar_cpf(cpf):<16} {formatar_endereco(endereco):<12}")
 
+    linha(100)
+
 
 def listar_cliente(lst_nome, lst_cpf, lst_enderoco):
 
@@ -56,6 +59,8 @@ def lista_produto(lst_nome, lst_preco):
 
     for id, (nome, preco) in enumerate(zip(lst_nome, lst_preco), 1):
         print(f"{f'[{id}]':<5} {nome.title():<22} R${preco:<16,.2f}")
+
+    linha(50)
 
 
 def listar_produto(lst_nome, lst_preco):
