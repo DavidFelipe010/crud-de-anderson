@@ -1,18 +1,20 @@
-from modulos.cadastrar import cadastrar_cliente, cadastrar_funcionario, cadastrar_produto
-from modulos.listar import listar_funcionario, listar_cliente, listar_produto
-def main():
-   nome = []
-   cpf = []
-   salario = []
-   
-   nome_cliente = []
-   cpf_cliente = []
-   endereco = []
+from modulos.cadastrar import cadastrar_funcionario
+from modulos.excluir import excluir_funcionario
 
-   nome_produto = []
+def main():
+   nome_funcionarios = []
+   cpf_funcionarios = []
+   salario_funcionarios = []
+   
+   nome_clientes = []
+   cpf_clientes = []
+   endereco_clientes = []
+
+   nome_produtos = []
    preco_produto = []
 
-   cadastrar_produto(nome_produto, preco_produto)
-   listar_produto(nome_produto, preco_produto)
+   cadastrar_funcionario(nome_funcionarios,cpf_funcionarios, salario_funcionarios)
+   excluir_funcionario(nome_funcionarios,cpf_funcionarios, salario_funcionarios)
+
 if __name__ == '__main__':
     main()

@@ -9,6 +9,8 @@ def lista_funcinario(lst_nome, lst_cpf, lst_enderoco):
     for id, (nome, cpf, salario) in enumerate(zip(lst_nome, lst_cpf, lst_enderoco), 1):
         print(f"{f'[{id}]':<5} {nome.title():<16} {formatar_cpf(cpf):<16} R${salario:<12,.2f}")
 
+    linha(60)
+
  
 def listar_funcionario(lst_nome, lst_cpf, lst_enderoco):
 
