@@ -13,7 +13,7 @@ def menu_alterar_funcionarios(lst_nome, lst_cpf, lst_salario):
 
     if not lst_nome or not lst_cpf or not lst_salario:
         print(f'\033[31m[ERROR] Não há nenhum funcionário cadastrado!\033[m')
-        input('Pressione ENTER para continuar...')
+        input('\nPressione ENTER para continuar...')
         return True
 
     else:
@@ -138,7 +138,7 @@ def menu_alterar_cliente(lst_nome, lst_cpf, lst_endereco):
 
     if not lst_nome or not lst_cpf or not lst_endereco:
         print(f'\033[31m[ERROR] Não há nenhum cliente cadastrado!\033[m')
-        input('Pressione ENTER para continuar...')
+        input('\nPressione ENTER para continuar...')
         return True
 
     else:
@@ -331,7 +331,7 @@ def menu_alterar_produtos(lst_nome, lst_preco):
 
     if not lst_nome or not lst_preco:
         print(f'\033[31m[ERROR] Não há nenhum produto cadastrado!\033[m')
-        input('Pressione ENTER para continuar...')
+        input('\nPressione ENTER para continuar...')
         return True
 
     else:
