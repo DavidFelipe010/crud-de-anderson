@@ -1,3 +1,8 @@
+'''
+Turma: 2º DSA
+Alunos: Cauã Cavalcanti, Caio Henrique, David Felipe, Guilherme Fernando, Giovana Hadassa, Henrique Eronildo, Neandro Felipe, Rohan Anthunes
+'''
+
 from modulos.cadastrar import cadastrar_funcionario, cadastrar_cliente, cadastrar_produto
 from modulos.listar import listar_funcionario, listar_cliente, listar_produto
 from modulos.alterar import menu_alterar_funcionarios, menu_alterar_cliente, menu_alterar_produtos
